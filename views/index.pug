@@ -1,0 +1,26 @@
+doctype html
+html
+    title Twitter Sentiment App
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway")
+    style.
+        body,h1 {font-family: "Raleway", sans-serif}
+        body, html {height: 100%}
+        .bgimg {
+            background-image: url('village.jpg');
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+    body
+        .bgimg.w3-display-container.w3-animate-opacity.w3-text-white
+            .w3-display-topleft.w3-padding-large.w3-xlarge Twitter Sentiment Measuring App
+            .w3-display-middle
+                h1.23-jumbo.w3-animate-top What twitter thinks about... 
+                form(action='/getphrase' method='post').w3-container.form-inline
+                    input(type="text" name='phrase').w3-input
+                    input(type="submit" value="send").w3-button.w3-white.w3-hover-green
+                h3.w3-l based on 20 newest tweets!
+                h3.w3-jumbo.w3-center #{verdict}
