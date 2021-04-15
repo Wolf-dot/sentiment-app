@@ -6,6 +6,7 @@ const bodyParser = require("body-parser");
 const twitter = require("ntwitter");
 const { response } = require('express');
 
+const port = process.env.PORT || 3000;
 
 var sentiment = new Sentiment();
 
@@ -45,8 +46,8 @@ app.post('/getphrase', (req,res)=>{
     });
 })
 
-var server = app.listen(5050, ()=>{
-    console.log("server is running on port 5000");
+var server = app.listen(port, ()=>{
+    console.log("server is running on port " + server.address().port); 
 });
 
 const streamTwits  = (streamParameters)=>{
