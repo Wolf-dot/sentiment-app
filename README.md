@@ -15,7 +15,7 @@ It's a Node.js app, powered by Express and Pug as a template engine.\
 A big part of it is of course Twitter API and a Sentiment module from https://github.com/thisandagain/sentiment .
 
 ## Live demo
-Demo is availeable on Glitch! \
+Demo is available on Glitch! \
 https://righteous-thin-spark.glitch.me
 
 
